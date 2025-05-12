@@ -1,4 +1,4 @@
-# study_smarter
+# Study_smarter
 
 # 📚 Img to Text Converter (Smarter Study)
 
