@@ -1,0 +1,225 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: white;
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    gap: 20px;
+}
+
+h1 {
+    color: #ff69b4;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+h2 {
+    color: #ff69b4;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+/* Converter Box */
+.converter-box, .result-box {
+    flex: 1;
+    background-color: #222;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.upload-area {
+    border: 2px dashed #ff69b4;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+/* Result Box */
+.text-output {
+    background-color: #333;
+    border: 1px solid #ff69b4;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    min-height: 100px;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.preview-container {
+    margin: 15px 0;
+    max-width: 100%;
+}
+
+.preview-container img {
+    max-width: 100%;
+    max-height: 200px;
+    border-radius: 8px;
+    border: 1px solid #ff69b4;
+}
+
+/* Language Selection */
+.language-selection {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.language-select {
+    background-color: #333;
+    color: white;
+    border: 1px solid #ff69b4;
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+}
+
+.language-select:focus {
+    border-color: #ff69b4;
+    box-shadow: 0 0 0 2px rgba(255, 105, 180, 0.25);
+}
+
+.language-select option {
+    background-color: #333;
+    color: white;
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+/* Buttons */
+.btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn svg, .btn span {
+    width: 16px;
+    height: 16px;
+    font-size: 16px;
+}
+
+.upload-btn, .camera-btn {
+    background-color: transparent;
+    color: #ff69b4;
+    border: 1px solid #ff69b4;
+    padding: 8px 15px;
+}
+
+.upload-btn:hover, .camera-btn:hover {
+    background-color: rgba(255, 105, 180, 0.1);
+}
+
+.extract-btn {
+    background-color: #ff69b4;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.extract-btn:hover {
+    background-color: #ff45a0;
+}
+
+.extract-btn:disabled {
+    background-color: #773d5a;
+    cursor: not-allowed;
+}
+
+.action-btn {
+    background-color: transparent;
+    color: #ff69b4;
+    border: 1px solid #ff69b4;
+    flex: 1;
+    min-width: 110px;
+    padding: 10px;
+}
+
+.action-btn:hover {
+    background-color: rgba(255, 105, 180, 0.1);
+}
+
+.action-btn:disabled {
+    color: #773d5a;
+    border-color: #773d5a;
+    cursor: not-allowed;
+}
+
+
+
+/* Result Containers */
+.result-container {
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .converter-box, .result-box {
+        width: 100%;
+    }
+    
+    .action-buttons {
+        flex-wrap: wrap;
+    }
+    
+    .action-btn {
+        min-width: calc(50% - 5px);
+    }
+
+}

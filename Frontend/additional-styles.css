@@ -1,0 +1,32 @@
+
+
+/* Audio Player Styling */
+.audio-player {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #333;
+    border-radius: 8px;
+}
+
+.audio-player audio {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.audio-download {
+    display: flex;
+    justify-content: center;
+}
+
+/* Result Container Common Styling */
+.result-container {
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+}
+
+.result-container h2 {
+    color: #ff69b4;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
